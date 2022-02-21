@@ -1,1 +1,42 @@
+package by.epam.jwd.task2;
 
+import java.util.Random;
+import java.util.Scanner;
+    
+public class Input {
+   //1. Составить линейную программу, печатающую значение true, если указанное высказывание является истинным, и false — в противном случае:
+   //Сумма двух первых цифр заданного четырехзначного числа
+   //равна сумме двух его последних цифр.
+public int inputByScanner(String message) {
+        int number;
+        System.out.println(message);
+        Scanner scanner = new Scanner(System.in);
+        while (!scanner.hasNextInt()) {
+        Scanner.nextLine();
+        System.out.println("введите число");
+        }
+        number = scanner.nextInt();
+        return number;
+    }
+    
+    // 2. Вычислить значение выражения по формуле (все переменные принимают действительные значения):
+
+   public int getRandomEvenNum (int min, int max) {
+    int n;
+    do {
+     n = getRandomNum(min, max);
+     }
+    while (n % 2 != 0);
+     return n;
+    }
+
+    
+        
+   //3. Вычислить периметр и площадь прямоугольного треугольника по длинам а и b  двух катетов.
+   
+    public int inputByRandom(String message) {
+      int number;
+      Random random = new Random();
+      number = random.nextInt(20) + 1;
+      System.out.println(message + number);
+      return number
