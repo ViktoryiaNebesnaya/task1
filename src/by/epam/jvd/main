@@ -1,0 +1,38 @@
+package by.epam.jwd.task2;
+
+public class Main {
+    public static void main(String[] args) {
+    View view = new View();
+    Input input = new Input();
+    Logic logic = new Logic();
+        
+        
+   //1. Составить линейную программу, печатающую значение true, если указанное высказывание является истинным, и false — в противном случае:
+   //Сумма двух первых цифр заданного четырехзначного числа
+   //равна сумме двух его последних цифр.
+
+    int number = input.inputByScanner("Введите число из четырех знаков: ");
+    boolean isTrue = logic.task1(number);
+    view.outputBooleanToTheConsole(isTrue);
+    
+    // 2. Вычислить значение выражения по формуле (все переменные принимают действительные значения):
+
+    message = "Enter a: ";
+        double a = input.enterNumber(message);
+    message = "Enter b: ";
+        double b = input.enterNumber(message);
+    message = "Enter c: ";
+        double c = input.enterNumber(message);
+        double result = calc.formula(a, b, c);
+    message = "result: ";
+        view.outputMessage(message + result);
+    
+    
+        
+   //3. Вычислить периметр и площадь прямоугольного треугольника по длинам а и b  двух катетов.
+   
+    int m = input.inputByRandom("Катет 1 = ");
+    int n = input.inputByRandom("Катет 2 = ");
+        double perimeter = logic.task3Perimeter(m, n);
+        double square = logic.task3Square(m, n);
+              view.outputPerimeterAndSquare(perimeter, square);
