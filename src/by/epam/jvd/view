@@ -1,1 +1,22 @@
+package by.epam.jwd.task2;
+import java.util.Arrays;
+public class View {
 
+        
+   //1. Составить линейную программу, печатающую значение true, если указанное высказывание является истинным, и false — в противном случае:
+   //Сумма двух первых цифр заданного четырехзначного числа
+   //равна сумме двух его последних цифр.
+     public void outputBooleanToTheConsole(boolean value) {
+      System.out.println(value);
+    }
+    // 2. Вычислить значение выражения по формуле (все переменные принимают действительные значения):
+     public void outputDoubleToConsole(String message, double value) {
+        System.out.println(message + value);
+    }
+    
+    
+        
+   //3. Вычислить периметр и площадь прямоугольного треугольника по длинам а и b  двух катетов.
+     public void outputPerimeterAndSquare(double perimeter, double square) {
+        System.out.println("Периметр = " + perimeter + ", площадь = " + square);
+    }
